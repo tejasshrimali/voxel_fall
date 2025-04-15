@@ -13,6 +13,7 @@ Voxel Fall is a platformer game inspired by Fall Guys. It features a compact obs
 - WASD for movements.
 - Space key for jump.
 - Hold shift for running.
+- use /togglemusic to on or off music
 - Speedrun for ranking up in leaderboards!
 
 ## 🧠 Features
