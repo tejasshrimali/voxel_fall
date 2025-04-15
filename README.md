@@ -6,7 +6,7 @@ This game is greatly inspired from fall guys , with map like fall guys this game
 ## 🚀 Setup Instructions
 
 ### Prerequisites
-- [HYTOPIA SDK](https://docs.hytopia.com) installed
+- [HYTOPIA SDK](https://dev.hytopia.com/) installed
 - [Bun Runtime](https://bun.sh) for running TypeScript scripts
 
 ### Steps
