@@ -5,7 +5,7 @@ Voxel Fall is a platformer game inspired by Fall Guys. It features a compact obs
 
 ## 🚀 Setup Instructions
 
-### Prerequisites
+### Prerequisites for devs
 - [HYTOPIA SDK](https://dev.hytopia.com/) installed
 - [Bun Runtime](https://bun.sh) for running TypeScript scripts
 
@@ -20,4 +20,6 @@ Voxel Fall is a platformer game inspired by Fall Guys. It features a compact obs
 - Dynamic Obstacles: moving / rotating platforms,rotating pushers, and more.
 - Time-Based Scoring: Players are ranked based on how quickly they reach the finish line.
 - Real-Time Leaderboards: leaderboard to track top performers.
+
+#### Made with [Hytopia SDK](https://dev.hytopia.com/)
 
