@@ -1,0 +1,816 @@
+{
+  "blockTypes": [
+    {
+      "id": 1,
+      "name": "bricks",
+      "textureUri": "blocks/bricks.png",
+      "isCustom": false
+    },
+    {
+      "id": 2,
+      "name": "clay",
+      "textureUri": "blocks/clay.png",
+      "isCustom": false
+    },
+    {
+      "id": 3,
+      "name": "coal-ore",
+      "textureUri": "blocks/coal-ore.png",
+      "isCustom": false
+    },
+    {
+      "id": 4,
+      "name": "cobblestone",
+      "textureUri": "blocks/cobblestone.png",
+      "isCustom": false
+    },
+    {
+      "id": 5,
+      "name": "creep",
+      "textureUri": "blocks/creep.png",
+      "isCustom": false
+    },
+    {
+      "id": 6,
+      "name": "diamond-block",
+      "textureUri": "blocks/diamond-block.png",
+      "isCustom": false
+    },
+    {
+      "id": 7,
+      "name": "diamond-ore",
+      "textureUri": "blocks/diamond-ore.png",
+      "isCustom": false
+    },
+    {
+      "id": 8,
+      "name": "dirt",
+      "textureUri": "blocks/dirt.png",
+      "isCustom": false
+    },
+    {
+      "id": 9,
+      "name": "dragon_block",
+      "textureUri": "blocks/dragon_block",
+      "isCustom": false
+    },
+    {
+      "id": 10,
+      "name": "dragons-stone",
+      "textureUri": "blocks/dragons-stone.png",
+      "isCustom": false
+    },
+    {
+      "id": 11,
+      "name": "emerald-block",
+      "textureUri": "blocks/emerald-block.png",
+      "isCustom": false
+    },
+    {
+      "id": 12,
+      "name": "emerald-ore",
+      "textureUri": "blocks/emerald-ore.png",
+      "isCustom": false
+    },
+    {
+      "id": 13,
+      "name": "ghost-dirt",
+      "textureUri": "blocks/ghost-dirt.png",
+      "isCustom": false
+    },
+    {
+      "id": 14,
+      "name": "glass",
+      "textureUri": "blocks/glass.png",
+      "isCustom": false
+    },
+    {
+      "id": 15,
+      "name": "gold-ore",
+      "textureUri": "blocks/gold-ore.png",
+      "isCustom": false
+    },
+    {
+      "id": 16,
+      "name": "grass",
+      "textureUri": "blocks/grass",
+      "isCustom": false
+    },
+    {
+      "id": 17,
+      "name": "gravel",
+      "textureUri": "blocks/gravel.png",
+      "isCustom": false
+    },
+    {
+      "id": 18,
+      "name": "ice",
+      "textureUri": "blocks/ice.png",
+      "isCustom": false
+    },
+    {
+      "id": 19,
+      "name": "infected-shadowrock-core",
+      "textureUri": "blocks/infected-shadowrock-core.png",
+      "isCustom": false
+    },
+    {
+      "id": 20,
+      "name": "infected-shadowrock",
+      "textureUri": "blocks/infected-shadowrock.png",
+      "isCustom": false
+    },
+    {
+      "id": 21,
+      "name": "iron-ore",
+      "textureUri": "blocks/iron-ore.png",
+      "isCustom": false
+    },
+    {
+      "id": 22,
+      "name": "lava",
+      "textureUri": "blocks/lava.png",
+      "isCustom": false
+    },
+    {
+      "id": 23,
+      "name": "log",
+      "textureUri": "blocks/log",
+      "isCustom": false
+    },
+    {
+      "id": 24,
+      "name": "mossy-coblestone",
+      "textureUri": "blocks/mossy-coblestone.png",
+      "isCustom": false
+    },
+    {
+      "id": 25,
+      "name": "nuit-leaves",
+      "textureUri": "blocks/nuit-leaves.png",
+      "isCustom": false
+    },
+    {
+      "id": 26,
+      "name": "nuit",
+      "textureUri": "blocks/nuit.png",
+      "isCustom": false
+    },
+    {
+      "id": 27,
+      "name": "oak-leaves",
+      "textureUri": "blocks/oak-leaves.png",
+      "isCustom": false
+    },
+    {
+      "id": 28,
+      "name": "oak-planks",
+      "textureUri": "blocks/oak-planks.png",
+      "isCustom": false
+    },
+    {
+      "id": 29,
+      "name": "sand-light",
+      "textureUri": "blocks/sand-light.png",
+      "isCustom": false
+    },
+    {
+      "id": 30,
+      "name": "sand",
+      "textureUri": "blocks/sand.png",
+      "isCustom": false
+    },
+    {
+      "id": 31,
+      "name": "sandstone-light",
+      "textureUri": "blocks/sandstone-light.png",
+      "isCustom": false
+    },
+    {
+      "id": 32,
+      "name": "sandstone",
+      "textureUri": "blocks/sandstone.png",
+      "isCustom": false
+    },
+    {
+      "id": 33,
+      "name": "shadow-pebble",
+      "textureUri": "blocks/shadow-pebble.png",
+      "isCustom": false
+    },
+    {
+      "id": 34,
+      "name": "shadowrock",
+      "textureUri": "blocks/shadowrock.png",
+      "isCustom": false
+    },
+    {
+      "id": 35,
+      "name": "snow",
+      "textureUri": "blocks/snow.png",
+      "isCustom": false
+    },
+    {
+      "id": 36,
+      "name": "stone-bricks",
+      "textureUri": "blocks/stone-bricks.png",
+      "isCustom": false
+    },
+    {
+      "id": 37,
+      "name": "stone",
+      "textureUri": "blocks/stone.png",
+      "isCustom": false
+    },
+    {
+      "id": 38,
+      "name": "swirl-rune",
+      "textureUri": "blocks/swirl-rune.png",
+      "isCustom": false
+    },
+    {
+      "id": 39,
+      "name": "void-sand",
+      "textureUri": "blocks/void-sand.png",
+      "isCustom": false
+    },
+    {
+      "id": 40,
+      "name": "void_grass",
+      "textureUri": "blocks/void_grass",
+      "isCustom": false
+    },
+    {
+      "id": 41,
+      "name": "voidsoil",
+      "textureUri": "blocks/voidsoil.png",
+      "isCustom": false
+    },
+    {
+      "id": 42,
+      "name": "water-flow",
+      "textureUri": "blocks/water-flow.png",
+      "isCustom": false
+    },
+    {
+      "id": 43,
+      "name": "water-still",
+      "textureUri": "blocks/water-still.png",
+      "isCustom": false
+    }
+  ],
+  "blocks": {
+    "-4,0,-3": 16,
+    "-4,0,-2": 16,
+    "-4,0,-1": 16,
+    "-4,0,0": 16,
+    "-4,0,1": 16,
+    "-4,0,2": 16,
+    "-4,0,3": 16,
+    "-3,0,-3": 16,
+    "-3,0,-2": 16,
+    "-3,0,-1": 16,
+    "-3,0,0": 16,
+    "-3,0,1": 16,
+    "-3,0,2": 16,
+    "-3,0,3": 16,
+    "-2,0,-3": 16,
+    "-2,0,-2": 16,
+    "-2,0,-1": 16,
+    "-2,0,0": 16,
+    "-2,0,1": 16,
+    "-2,0,2": 16,
+    "-2,0,3": 16,
+    "-1,0,-3": 16,
+    "-1,0,-2": 16,
+    "-1,0,-1": 16,
+    "-1,0,0": 16,
+    "-1,0,1": 16,
+    "-1,0,2": 16,
+    "-1,0,3": 16,
+    "0,0,-3": 16,
+    "0,0,-2": 16,
+    "0,0,-1": 16,
+    "0,0,0": 16,
+    "0,0,1": 16,
+    "0,0,2": 16,
+    "0,0,3": 16,
+    "1,0,-3": 16,
+    "1,0,-2": 16,
+    "1,0,-1": 16,
+    "1,0,0": 16,
+    "1,0,1": 16,
+    "1,0,2": 16,
+    "1,0,3": 16,
+    "2,0,-3": 16,
+    "2,0,-2": 16,
+    "2,0,-1": 16,
+    "2,0,0": 16,
+    "2,0,1": 16,
+    "2,0,2": 16,
+    "2,0,3": 16,
+    "3,0,-3": 16,
+    "3,0,-2": 16,
+    "3,0,-1": 16,
+    "3,0,0": 16,
+    "3,0,1": 16,
+    "3,0,2": 16,
+    "3,0,3": 16,
+    "4,0,-3": 16,
+    "4,0,-2": 16,
+    "4,0,-1": 16,
+    "4,0,0": 16,
+    "4,0,1": 16,
+    "4,0,2": 16,
+    "4,0,3": 16,
+    "-4,0,4": 16,
+    "-3,0,4": 16,
+    "-2,0,4": 16,
+    "-1,0,4": 16,
+    "0,0,4": 16,
+    "1,0,4": 16,
+    "2,0,4": 16,
+    "3,0,4": 16,
+    "4,0,4": 16,
+    "5,0,-2": 16,
+    "5,0,-1": 16,
+    "5,0,0": 16,
+    "5,0,1": 16,
+    "5,0,2": 16,
+    "5,0,3": 16,
+    "6,0,-2": 16,
+    "6,0,3": 16,
+    "7,0,-2": 16,
+    "7,0,3": 16,
+    "8,0,-2": 16,
+    "8,0,3": 16,
+    "9,0,-2": 16,
+    "9,0,3": 16,
+    "10,0,-2": 16,
+    "10,0,3": 16,
+    "11,0,-2": 16,
+    "11,0,-1": 16,
+    "11,0,0": 16,
+    "11,0,1": 16,
+    "11,0,2": 16,
+    "11,0,3": 16,
+    "6,0,-1": 16,
+    "6,0,0": 16,
+    "6,0,1": 16,
+    "6,0,2": 16,
+    "7,0,-1": 16,
+    "7,0,0": 16,
+    "7,0,1": 16,
+    "7,0,2": 16,
+    "8,0,-1": 16,
+    "8,0,0": 16,
+    "8,0,1": 16,
+    "8,0,2": 16,
+    "9,0,-1": 16,
+    "9,0,0": 16,
+    "9,0,1": 16,
+    "9,0,2": 16,
+    "10,0,-1": 16,
+    "10,0,0": 16,
+    "10,0,1": 16,
+    "10,0,2": 16,
+    "12,0,-1": 16,
+    "12,0,0": 16,
+    "12,0,1": 16,
+    "12,0,2": 16,
+    "13,0,-1": 16,
+    "13,0,0": 16,
+    "13,0,1": 16,
+    "13,0,2": 16,
+    "14,0,-1": 16,
+    "14,0,0": 16,
+    "14,0,1": 16,
+    "14,0,2": 16,
+    "15,0,-1": 16,
+    "15,0,0": 16,
+    "15,0,1": 16,
+    "15,0,2": 16,
+    "16,0,-1": 16,
+    "16,0,0": 16,
+    "16,0,1": 16,
+    "16,0,2": 16,
+    "17,0,-1": 16,
+    "17,0,0": 16,
+    "17,0,1": 16,
+    "17,0,2": 16,
+    "18,0,-1": 16,
+    "18,0,0": 16,
+    "18,0,1": 16,
+    "18,0,2": 16,
+    "19,0,0": 16,
+    "19,0,1": 16,
+    "20,0,0": 16,
+    "20,0,1": 16,
+    "21,0,0": 16,
+    "21,0,1": 16,
+    "22,0,0": 16,
+    "22,0,1": 16,
+    "23,0,0": 16,
+    "23,0,1": 16,
+    "24,0,-2": 16,
+    "24,0,-1": 16,
+    "24,0,0": 16,
+    "24,0,1": 16,
+    "24,0,2": 16,
+    "24,0,3": 16,
+    "25,0,-2": 16,
+    "25,0,3": 16,
+    "26,0,-2": 16,
+    "26,0,3": 16,
+    "27,0,-2": 16,
+    "27,0,3": 16,
+    "28,0,-2": 16,
+    "28,0,3": 16,
+    "29,0,-2": 16,
+    "29,0,3": 16,
+    "30,0,-2": 16,
+    "30,0,3": 16,
+    "31,0,-2": 16,
+    "31,0,3": 16,
+    "32,0,-2": 16,
+    "32,0,3": 16,
+    "33,0,-2": 16,
+    "33,0,3": 16,
+    "34,0,-2": 16,
+    "34,0,-1": 16,
+    "34,0,0": 16,
+    "34,0,1": 16,
+    "34,0,2": 16,
+    "34,0,3": 16,
+    "39,0,1": 16,
+    "40,0,1": 16,
+    "41,0,2": 16,
+    "41,0,3": 16,
+    "41,0,4": 16,
+    "41,0,5": 16,
+    "41,0,6": 16,
+    "41,0,7": 16,
+    "41,0,8": 16,
+    "41,0,9": 16,
+    "40,0,10": 16,
+    "39,0,11": 16,
+    "38,0,12": 16,
+    "38,0,13": 16,
+    "37,0,14": 16,
+    "36,0,15": 16,
+    "35,0,16": 16,
+    "34,0,16": 16,
+    "33,0,16": 16,
+    "32,0,16": 16,
+    "31,0,16": 16,
+    "30,0,16": 16,
+    "29,0,16": 16,
+    "28,0,16": 16,
+    "27,0,16": 16,
+    "26,0,16": 16,
+    "25,0,16": 16,
+    "24,0,16": 16,
+    "23,0,16": 16,
+    "38,0,1": 16,
+    "37,0,1": 16,
+    "35,0,1": 16,
+    "36,0,1": 16,
+    "35,0,0": 16,
+    "36,0,0": 16,
+    "37,0,0": 16,
+    "38,0,0": 16,
+    "39,0,0": 16,
+    "35,0,2": 16,
+    "36,0,2": 16,
+    "22,0,16": 16,
+    "22,0,15": 16,
+    "22,0,14": 16,
+    "20,0,14": 16,
+    "19,0,14": 16,
+    "18,0,14": 16,
+    "21,0,18": 16,
+    "22,0,17": 16,
+    "22,0,18": 16,
+    "20,0,18": 16,
+    "19,0,18": 16,
+    "18,0,18": 16,
+    "18,0,17": 16,
+    "18,0,16": 16,
+    "18,0,15": 16,
+    "21,0,16": 43,
+    "20,0,16": 43,
+    "19,0,16": 43,
+    "19,0,17": 43,
+    "20,0,17": 43,
+    "21,0,17": 43,
+    "21,0,15": 43,
+    "20,0,15": 43,
+    "19,0,15": 43,
+    "21,0,14": 16,
+    "16,0,15": 27,
+    "16,0,14": 27,
+    "17,0,14": 27,
+    "17,0,15": 27,
+    "17,0,16": 27,
+    "17,0,17": 27,
+    "16,0,17": 27,
+    "16,0,18": 27,
+    "17,0,18": 27,
+    "29,0,13": 16,
+    "29,0,10": 16,
+    "29,0,6": 16,
+    "29,0,9": 16
+  },
+  "entities": {
+    "16,2.40625,18": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "16,2.694132585295071,15": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.2047165050987168,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "16,3.0191335181610373,15": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.4358282795811819,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "-4,2.626574670963229,-3": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.1566753215738517,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "-4,2.0339987926074805,-3": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 0.7352880302986529,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "-4,3.008608550545853,4": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.4283438581659398,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "-4,2.6653757481030387,4": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.1842671986510496,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "-4,3.017025677194499,0": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.4343293704494213,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "-4,1.9619385134680407,0": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 0.6840451651328289,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "4,2.639964002378025,-3": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.1661966239132617,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "4,2.519327169552085,-3": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.0804104316814827,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "4,2.995059726917662,4": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.4187091391414484,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "4,2.6406483024693372,4": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 1.1666832373115286,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "11,1.8375237732971348,-2": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 0.5955724610112958,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "11,2.07851790520232,-2": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 0.7669460659216495,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "11,2.0765311690186454,3": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 0.7655332757465924,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    "11,2.0277935813825554,3": {
+      "modelUri": "models/environment/basic-tree.gltf",
+      "modelLoopedAnimations": [
+        "idle"
+      ],
+      "modelScale": 0.7308754356498172,
+      "name": "basic-tree",
+      "rigidBodyOptions": {
+        "type": "kinematic_velocity",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    }
+  },
+  "version": "1.4.5"
+}

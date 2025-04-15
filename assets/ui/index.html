@@ -1,0 +1,236 @@
+<!--
+This is a basic boilerplate example of how to implement simple game UI,
+and also configure additional buttons for mobile compatibility.
+-->
+
+<script>
+  // Handle interact button touch / untouch
+  const mobileInteractButton = document.getElementById("mobile-interact-button");
+  mobileInteractButton.addEventListener("touchstart", (e) => {
+    e.preventDefault(); // Prevents mobile highlight/select/copy popup behaviors
+    mobileInteractButton.classList.add("active"); // more immediate feedback to add/remove active class
+    hytopia.pressInput("ml", true);
+  });
+
+  mobileInteractButton.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    mobileInteractButton.classList.remove("active");
+    hytopia.pressInput("ml", false);
+  });
+
+  // Handle jump button touch / untouch
+  const mobileJumpButton = document.getElementById("mobile-jump-button");
+  mobileJumpButton.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    mobileJumpButton.classList.add("active");
+    hytopia.pressInput(" ", true);
+  });
+
+  mobileJumpButton.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    mobileJumpButton.classList.remove("active");
+    hytopia.pressInput(" ", false);
+  });
+  let i = 5;
+
+  const interval = setInterval(() => {
+    const startTimer = document.getElementById("start-timer");
+    const timerText = document.getElementById("start-timer_sec");
+    timerText.innerHTML = `Starts in ${i}`;
+    if (i == 0) {
+      clearInterval(interval);
+      startTimer.classList.add("hide");
+    }
+    i--;
+  }, 1000);
+
+  hytopia.onData((data) => {
+    // data is any arbitrary object you send from the server
+    if (data.type === "time") {
+      let timer = document.querySelector("#time");
+      let timeContainer = document.querySelector("#time-container");
+      timer.innerHTML = `Great! you did it in : ${data.time.toFixed(1)}s`;
+      timeContainer.classList.remove("hide");
+    }
+    if (data.type === "restart") {
+      let timeContainer = document.querySelector("#time-container");
+      timeContainer.classList.add("hide");
+    }
+
+    if (data.type === "leaderboard") {
+      updateLeaderboard(data.list);
+    }
+  });
+
+  function updateLeaderboard(scores) {
+    const leaderboardPlayers = document.querySelector(".leaderboard-players");
+    leaderboardPlayers.innerHTML = ""; // Clear existing entries
+
+    // Convert scores object to array and sort by time (ascending)
+    const sortedPlayers = Object.entries(scores).sort((a, b) => a[1] - b[1]);
+
+    // Create player entries
+    sortedPlayers.forEach(([username, time], index) => {
+      const playerElement = document.createElement("div");
+      playerElement.className = "leaderboard-player";
+
+      // Format time to show 2 decimal places
+      const formattedTime = time.toFixed(2);
+
+      playerElement.innerHTML = `
+        <div class="player-name">${index + 1}. ${username}</div>
+        <div class="player-time">${formattedTime}s</div>
+      `;
+
+      leaderboardPlayers.appendChild(playerElement);
+    });
+  }
+</script>
+
+<!--
+  HYTOPIA allows you to build completely custom UI using HTML, CSS and Javascript.
+  You can build simple UIs, to highly complex ones. UI capabilities are as powerful
+  as building a regular web page - there are close to no limitations on what is possible.
+
+  Remember, HYTOPIA sandboxes your UI & UI scripts, so external network requests or
+  other unsafe actions likely won't work as you expect in production.
+-->
+<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center">
+  <div class="containerUI_custom">
+    <ul id="start-timer" style="font-size: 15px; color: rgb(255, 255, 255)">
+      <li>Welcome to the Voxel Fall!</li>
+      <li>Use WASD to move around.</li>
+      <li>Press space to jump</li>
+      <li>Type /togglemusic to turn on/off music</li>
+      <li>Hold shift to sprint.</li>
+      <li>Speedrun to the end for ranking up in leaderboards!!</li>
+      <li id="start-timer_sec">Starts in</li>
+    </ul>
+
+    <div class="hide" id="time-container">
+      <p id="time" style="text-align: center; font-size: 40px; font-weight: bold; color: rgb(255, 255, 255)">
+        Time Taken
+      </p>
+      <span style="font-size: 15px; color: rgb(255, 255, 255); 
+      text-align: center; font-family: monospace">
+      You can type /restart to beat this score!!</span>
+    </div>
+  </div>
+  <!-- <div class="leaderboard-container">
+    <div class="leaderboard-title">Leaderboard</div>
+    <div class="leaderboard-players"></div>
+
+  </div> -->
+</div>
+
+<div class="mobile-controls">
+  <a id="mobile-interact-button" class="mobile-button">
+    <img src="{{CDN_ASSETS_URL}}/icons/target.png" />
+  </a>
+
+  <a id="mobile-jump-button" class="mobile-button">
+    <img src="{{CDN_ASSETS_URL}}/icons/jump.png" />
+  </a>
+</div>
+
+<style>
+  /* By default, we hide the mobile controls */
+  .mobile-controls {
+    display: none;
+  }
+
+  /*
+    We can use the body.mobile class to detect if we're on a mobile device.
+    The HYTOPIA game client will always add this class to the body element when running on a mobile device.
+  */
+  body.mobile .mobile-controls {
+    /* If this css selector matches because we're on mobile, show the mobile controls */
+    display: flex;
+    gap: 14px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  /* You can configure and style your buttons however you'd like. This is a minimalistic starting point. */
+  .mobile-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, background-color;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  .mobile-button img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mobile-button.active {
+    transform: scale(0.92);
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  .hide {
+    display: none;
+  }
+  .containerUI_custom {
+    background-color: rgba(19, 19, 19, 0.514);
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  .leaderboard {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .leaderboard-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 10px;
+  }
+
+  .leaderboard-player {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .player-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  .player-time {
+    font-family: monospace;
+  }
+</style>
+
+<div class="leaderboard">
+  <div class="leaderboard-title">Leaderboard</div>
+  <div class="leaderboard-players"></div>
+</div>
